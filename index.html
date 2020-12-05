@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leopard@^1/dist/index.min.css"
+    />
+  </head>
+  <body>
+    <!--  <button id="greenFlag">Green Flag</button> -->
+    <div id="project"></div>
+
+    <script type="module">
+      import project from "./index.js";
+
+      project.attach("#project");
+
+      //document.querySelector("#greenFlag").addEventListener("click", () => {
+      // project.greenFlag();
+
+      //});
+
+      // Autoplay
+      project.greenFlag();
+    </script>
+  </body>
+</html>
